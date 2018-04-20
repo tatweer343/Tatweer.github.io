@@ -1,15 +1,17 @@
-/*
+ /*
 Theme Name:Tatweer
 Theme Coder : Ahmed Tawfeeq
 first color:#2285e8
 Second color:
 */
+
+
 /*start upper bar*/
 .upper-bar{
     background-color: blue;
 }
 .fas fa-phone-volume{
-    color: black;
+    color: #0a4763;
 }
 /* end upper bar*/
 /*Startnavbar*/
@@ -18,24 +20,33 @@ Second color:
 }
 
 .bg-light{
-    background-color:#3e3535 !important
+    background-color:#0a4763!important
 }
 .navbar-light .navbar-brand{
     color: white;
     font-family: "Kaushan Script";
 }
- .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+ /*.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
     color: white;
-}
+}*/
 .navbar-light .navbar-nav .nav-link{
     color: white;
     font-family: "Kaushan Script";
 }
-.navbar-light .navbar-nav .nav-link.disabled{
+/*.navbar-light .navbar-nav .nav-link .disabled{
     color: white;
+}*/
+
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link{
+    color:rgb(255, 255, 255)
 }
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
-    color:red
+/*.nav-link hover{
+    color: white;
+   
+}*/
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+    color:red;
 }
 
 
@@ -60,7 +71,8 @@ Second color:
 }
 
 .js .photostack {
-	height: 580px;
+	height: 600px;
+	margin-top: 55px;
 }
 
 .photostack-start {
@@ -358,7 +370,12 @@ figure.photostack-current::after {
     text-align: center;
     padding: 50px;
 }
-
+.features{
+	color: #1279a8;
+}
+.features p{
+	color: #575554;
+}
 /*End features*/
 
 
@@ -366,7 +383,12 @@ figure.photostack-current::after {
 /*start Overview*/
 .overview{
     padding: 100px;
-    background-color: beige;
+	background-image:url("../img/fuji_x100s_camera-wallpaper-3554x1999.jpg");
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .overview h2{
@@ -388,6 +410,17 @@ figure.photostack-current::after {
     border-radius: 40px;
     cursor: pointer;
 }
+
+
+.overview2{
+	padding-top: 30px;
+	padding: 100px;
+	background-image: url("../img/black__white_city-wallpaper-1920x1080.jpg");
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 /*end Overview*/
 
 
@@ -405,8 +438,8 @@ figure.photostack-current::after {
     
 }
 .featured-work ul li{
-    color: burlywood;
-    border: 2px solid burlywood;
+   
+    border: 2px solid #dedad4;
     padding: 10px 20px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -419,7 +452,7 @@ figure.photostack-current::after {
 .featured-work ul li.active,
 .featured-work ul li:hover {
     color: white;
-    background-color:burlywood; 
+    background-color:#d2d0ce; 
 }
 .featured-work ul li:hover{
     cursor: pointer;
@@ -442,7 +475,10 @@ figure.photostack-current::after {
 }
 /*end featured work*/
 
-
+#tatweer{
+	margin-top: 25px;
+	margin-left: 80px;
+}
 /* start copyright*/
 
 .copyright{
@@ -471,19 +507,76 @@ figure.photostack-current::after {
 
 /*end copy right*/
 
-
-.scrollTop {
-  position:static;
+.scrollup {
+  width: 40px;
+  height: 40px;
+  position:fixed;
   right: 2%;
   bottom: 10px;
-  background-color: #BE3F48;
-  padding: 20px;
-  opacity: 1;
+  color: white;
+  background-color: #0a4763;
+  opacity: .6;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   
+  z-index: 1000;
+  -webkit-transition: opacity .5s,background-color .5s;
+  transition-property: opacity, background-color;
+transition-duration: 0.5s, 0.5s;
+transition-timing-function: ease, ease;
+transition-delay: 0s, 0s;
+
   transition: all 0.4s ease-in-out 0s;
 }
+.scrollup i,a:hover {
+	text-decoration:none;
+   }
+.scrollup a{
+	font-size: 13px;
+position: absolute;
+opacity: 1;
+color: #fff;
+left: 50%;
+top: 40%;
+margin-top: -7px;
+margin-left: -6px;
+}
 
-.scrollTop a {
+#top {
   font-size: 18px;
   color: #fff;
+  margin-right: 16px;
+    text-align: center;
+    
+    
 }
+
+.footer-copyright{
+    background-color: #222;
+}
+
+.pt-0, .py-0{
+    background-image:url("../img/blur_colors_of_life-wallpaper-1920x1080.jpg");
+}
+
+a:not([href]):not([tabindex]){
+    color:#666363;
+}
+h6{
+    color: #666363;
+}
+h6 strong{
+    color: #ffffff;
+}
+p{
+    color: white;
+}
+.footer-copyright {
+   font-family: "Kaushan Script"; 
+}
+.footer-copyright a {
+	color: white; 
+ }
